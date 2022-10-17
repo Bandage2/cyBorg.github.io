@@ -49,7 +49,7 @@
 		             if (window.pageYOffset >= 900){
 
 		             document.querySelector(".popup").style.display="block";
-		              if(window.pageYOffset <= 900){document.querySelector(".popup").style.display="none";}
+		              if(window.pageYOffset < 900){document.querySelector(".popup").style.display="none";}
 
 		             document.querySelector("#close").addEventListener("click", function(){
 	                 document.querySelector(".popup").style.display="none"; });
