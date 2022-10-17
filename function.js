@@ -44,13 +44,18 @@
 
 
         // SCROLLING POPUP******
+                    
+            		window.addEventListener('scroll', () =>{
+		             if (window.pageYOffset >= 900){
 
-					window.addEventListener('scroll', () =>
-					{
+		             document.querySelector(".popup").style.display="block";
+		              if(window.pageYOffset >= 905){document.querySelector(".popup").style.display="none";}
 
-							 if (window.pageYOffset >= 900)
-							 {
-							 			alert("warning");
-							 }
+		             document.querySelector("#close").addEventListener("click", function(){
+	                 document.querySelector(".popup").style.display="none"; });
 
+
+	                }
+
+        
 					});
