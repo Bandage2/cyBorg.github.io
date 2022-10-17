@@ -9,14 +9,15 @@
 
 .popup{
 	background-color: white;
-	width: 20%;
-	padding: 11px 40px;
-	position: absolute;
+	width: 30%;
+	padding: 40px 40px;
 	transform: translate(-50%, -50%);
 	left: 50%;
-	top:140%;
 	border-radius: 7px;
 	display: none;
+	position: fixed;
+	z-index:999 ;
+	margin-top: 128px;
 
 
 }
