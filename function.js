@@ -1,38 +1,39 @@
-			var show=1;
+var show=1;
+			document.getElementById('first_logo').style.display="block";
 			document.getElementById('btn-img').onclick = () =>	
 					  {
-					  	// console.log('working');
-							         	if(show==1)
-								{
-									document.getElementById('first_logo').style.display="none";
-									document.getElementById('second-logo').classList.remove("displayNone");
-									// document.getElementById('second-logo').getElementsByClassName("logo")[0]..style.display="none";
-									show++;
+								if (show==1) {
+                                     
+                                     document.getElementById('first_logo').style.display="none";
+                                     document.getElementById('second-logo').style.display="block";
+                                     show++;
+
+
 								}
-								else if(show==2)
-								{
-									document.getElementById('second-logo').style.display="none";
-									document.getElementById('thrid-logo').classList.remove("displayNone");
-									show++;
+								else if (show==2) {
+                                     
+                                     document.getElementById('second-logo').style.display="none";
+                                     document.getElementById('thrid-logo').style.display="block";
+                                     show++;
+
+
 								}
 
 								else if(show==3)
 								{
 									document.getElementById('thrid-logo').style.display="none";
-									document.getElementById('fourth-logo').classList.remove("displayNone");
+									document.getElementById('fourth-logo').style.display="block"
 									show++;
 
 								}
+								else if (show==4) {
 
-								else if(show==4)
-								{
 									document.getElementById('fourth-logo').style.display="none";
-									document.getElementById('first_logo').style.display="block";
+									document.getElementById('first_logo').style.display="block"
 									show=1;
-
 								}
-								// console.log('show'+ show);
-            }
+									
+                      }
 
 
          // VIEW PORT SIZE*******
